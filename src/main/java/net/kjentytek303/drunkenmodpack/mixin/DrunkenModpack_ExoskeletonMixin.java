@@ -5,9 +5,6 @@ import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.PathfinderMob;
 import net.minecraft.world.level.Level;
 import org.spongepowered.asm.mixin.Mixin;
-import org.spongepowered.asm.mixin.injection.At;
-import org.spongepowered.asm.mixin.injection.Inject;
-import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 
 
 @Mixin(net.ltxprogrammer.changed.entity.robot.Exoskeleton.class )
@@ -18,7 +15,7 @@ public abstract class DrunkenModpack_ExoskeletonMixin extends AbstractRobot {
 	}
 
 	@Override
-	protected float getChargeRate() {
+	public float getChargeRate() {
 		return 1f/*super.getChargeRate() *4 */;
 	}
 }
