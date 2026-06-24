@@ -16,6 +16,6 @@ public abstract class DrunkenModpack_ExoskeletonMixin extends AbstractRobot {
 
 	@Override
 	public float getChargeRate() {
-		return 1f/*super.getChargeRate() *4 */;
+		return super.getChargeRate() * 4;
 	}
 }
