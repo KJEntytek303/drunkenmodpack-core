@@ -1,0 +1,15 @@
+{
+  "required": true,
+  "package": "net.kjentytek303.drunkenmodpack.mixin",
+  "minVersion": "0.8",
+  "compatibilityLevel": "JAVA_17",
+  "refmap": "drunkenmodpack.refmap.json",
+  "mixins": [
+    "DrunkenModpack_ExoskeletonMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  },
+  "client": [
+  ]
+}
